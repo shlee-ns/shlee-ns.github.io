@@ -107,9 +107,6 @@ author:
   location         : "Korea"
   email            : "sh.lee@gnu.ac.kr"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:sh.lee@gnu.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
