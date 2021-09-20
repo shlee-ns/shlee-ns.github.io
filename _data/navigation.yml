@@ -2,7 +2,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "의학통계 개념"
+  - title: "의학 통계 개념"
     url: /concept/
   - title: "쉬운 R"
     url: /r/
