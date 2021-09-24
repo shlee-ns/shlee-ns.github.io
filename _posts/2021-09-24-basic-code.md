@@ -1,6 +1,8 @@
 ---
 title:  "Pandas와 Numpy 기본적인 코드 정리"
 excerpt: "외상성 뇌손상 환자의 조기사망 예측 모델을 만들 때 사용했던 Pandas와 Numpy 코드들을 정리했다."
+toc: true
+toc_sticky: true
 
 categories:
   - Blog
@@ -71,8 +73,6 @@ df_1 = df.drop(['INR'], axis = 1, inplace=True)
 * `inplace=False`로 지정하면 df_1 에서만 `'age'` 칼럼이 없고 df 에는 남아 있다.
 
 ### 8. 칼럼 만들기
-<br>
-
 ```python
 df['instant'] = 1
 ```
