@@ -1,3 +1,13 @@
+---
+title:  "Pandas, Numpy 기본적인 코드 정리"
+excerpt: "외상성 뇌손상 환자의 조기사망 예측 모델을 만들 때 사용했던 Pandas와 Numpy 코드들을 정리했다."
+
+categories:
+  - Blog
+tags:
+  - Blog
+---
+
 # Pandas와 Numpy 기본적인 코드 정리
 
 외상성 뇌손상 환자의 조기사망을 예측하는 머신 러닝 모델을 만들었다.  
@@ -90,6 +100,7 @@ df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 ```python
 nd_df = df.values
 ```
+
 
 # 2. Numpy
 
