@@ -102,17 +102,17 @@ nd_df = df.values
 
 # 2. Numpy
 
-### 1. list 를 numpy로 변환
+1. list 를 numpy로 변환
 ```python
 beta = np.array[[1, 2, 3, 4]]
 ```
 
-### 2. numpy 모양 변경
+2. numpy 모양 변경
 ```python
 beta = beta.reshape(4, 1)
 ```
 
-### 3. 내적(행렬 곱)
+3. 내적(행렬 곱)
 ```python
 z = nd_df.dot(beta)
 ```
