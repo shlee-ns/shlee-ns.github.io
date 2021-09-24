@@ -98,8 +98,6 @@ df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 nd_df = df.values
 ```
 
----
-
 # 2. Numpy
 
 ### 1. list 를 numpy로 변환
