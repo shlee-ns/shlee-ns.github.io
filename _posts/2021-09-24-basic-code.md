@@ -22,20 +22,15 @@ tags:
 # 1. Pandas
 
 ### 1. CSV 파일 불러오기  
-<br>
-
 ```python
 df = pd.read_csv('data.csv') 
 ```
 * `' '`에 파일 경로를 입력한다  
 
 * df는 임의로 정한 변수이므로 변경 가능하다.
-  
-<br>
+
 
 ### 2. 데이터 확인
-<br>
-
 ```python
 df.head()
 df.describe()
@@ -44,7 +39,6 @@ df.shape
 ```
 
 ### 3. 데이터 프레임 칼럼 확인, 이름 바꾸기
-<br>
 
 ```python
 df.columns
@@ -52,21 +46,21 @@ df.columns = ['col', 'col', 'col']
 df.rename(columns={'Before':'After'})
 ```
 
-### 3. 데이터 프레임 특정 칼럼(열) 1개 선택
+### 4. 데이터 프레임 특정 칼럼(열) 1개 선택
 <br>
 
 ```python
 y= df['outcome']
 ```
 
-### 4. 데이터 프레임에서 칼럼(열) 여러개 선택
+### 5. 데이터 프레임에서 칼럼(열) 여러개 선택
 <br>
 
 ```python
 num = df.loc[:, ['age', 'INR', 'glucose', 'MLS', 'SDH']]
 ```
 
-### 5. 칼럼들 결합하기
+### 6. 칼럼들 결합하기
 <br>
 
 ``` python
@@ -77,7 +71,7 @@ X = pd.concat([num, cat], axis=1)
 
 <br>
 
-### 6. 칼럼 삭제 
+### 7. 칼럼 삭제 
 <br>
 
 ```python
@@ -88,7 +82,7 @@ df_1 = df.drop(['INR'], axis = 1, inplace=True)
 
 <br>
 
-### 7. 칼럼 만들기
+### 8. 칼럼 만들기
 <br>
 
 ```python
@@ -99,7 +93,7 @@ df['instant'] = 1
 
 <br>
 
-### 8. 칼럼 값 연산
+### 9. 칼럼 값 연산
 <br>
 
 ```python
@@ -112,14 +106,14 @@ df.loc[df['basal_cistern'] == 1, 'basal_cistern'] = 0
 
 <br>
 
-### 9. 칼럼 순서 바꾸기
+### 10. 칼럼 순서 바꾸기
 <br>
 
 ```python
 df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 ```
 
-### 10. 데이터 프레임을 Numpy 배열로 변환
+### 11. 데이터 프레임을 Numpy 배열로 변환
 <br>
 
 ```python
