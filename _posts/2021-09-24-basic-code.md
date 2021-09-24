@@ -98,6 +98,8 @@ df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 nd_df = df.values
 ```
 
+---
+
 # 2. Numpy
 
 ### 1. list 를 numpy로 변환
@@ -116,9 +118,3 @@ z = nd_df.dot(beta)
 ```
 * nd_df가 m x n 행령, beta 가 n x m' 행렬이면 내적한 z 는 m x m' 행렬이 된다.
 * nd_df의 열의 갯수와 beta의 행의 갯수가 같아야 한다.
-<br>
-<br>
-<br>
-<br>
-<br>
-
