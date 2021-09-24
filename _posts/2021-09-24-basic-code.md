@@ -40,7 +40,7 @@ df.info()
 df.shape
 ```
 
-### 3. 데이터 프레임 칼럼 확인, 이름 바꾸기
+### 3. 칼럼 이름 확인, 바꾸기
 
 ```python
 df.columns
@@ -48,17 +48,17 @@ df.columns = ['col', 'col', 'col']
 df.rename(columns={'Before':'After'})
 ```
 
-### 4. 데이터 프레임 특정 칼럼(열) 1개 선택
+### 4. 칼럼 1개 선택
 ```python
 y= df['outcome']
 ```
 
-### 5. 데이터 프레임에서 칼럼(열) 여러개 선택
+### 5. 칼럼 여러개 선택
 ```python
 num = df.loc[:, ['age', 'INR', 'glucose', 'MLS', 'SDH']]
 ```
 
-### 6. 칼럼들 결합하기
+### 6. 칼럼 결합
 ``` python
 X = pd.concat([num, cat], axis=1)
 ```
@@ -79,7 +79,7 @@ df['instant'] = 1
 
 * `'instant'`라는 새로운 칼럼을 만들고 모든 행에 1이라는 값을 부여
 
-### 9. 칼럼 값 연산
+### 9. 칼럼 연산
 ```python
 df.loc[df['age'] < 0, 'age'] = 0
 df.loc[df['basal_cistern'] == 1, 'basal_cistern'] = 0
@@ -93,7 +93,7 @@ df.loc[df['basal_cistern'] == 1, 'basal_cistern'] = 0
 df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 ```
 
-### 11. 데이터 프레임을 Numpy 배열로 변환
+### 11. Numpy 배열로 변환
 ```python
 nd_df = df.values
 ```
@@ -112,7 +112,7 @@ beta = np.array[[1, 2, 3, 4]]
 beta = beta.reshape(4, 1)
 ```
 
-### 3. 내적(행렬 곱)
+### 3. 내적
 ```python
 z = nd_df.dot(beta)
 ```
