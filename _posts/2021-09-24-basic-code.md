@@ -8,7 +8,6 @@ tags:
   - Blog
 ---
 
-# Pandas와 Numpy 기본적인 코드 정리
 
 외상성 뇌손상 환자의 조기사망을 예측하는 머신 러닝 모델을 만들었다.  
 
@@ -18,7 +17,7 @@ tags:
 
 이번 포스팅에서는 외상성 뇌손상 환자의 조기사망 예측 모델을 만들 때 사용했던 **Pandas**와 **Numpy** 코드들을 정리하고자 한다.
 
-
+---
 
 # 1. Pandas
 
@@ -101,6 +100,7 @@ df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 nd_df = df.values
 ```
 
+---
 
 # 2. Numpy
 
