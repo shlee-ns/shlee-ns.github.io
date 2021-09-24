@@ -22,6 +22,7 @@ tags:
 # 1. Pandas
 
 ### 1. CSV 파일 불러오기  
+<br>
 
 ```python
 df = pd.read_csv('data.csv') 
@@ -29,8 +30,12 @@ df = pd.read_csv('data.csv')
 * `' '`에 파일 경로를 입력한다  
 
 * df는 임의로 정한 변수이므로 변경 가능하다.
+  
+<br>
 
 ### 2. 데이터 확인
+<br>
+
 ```python
 df.head()
 df.describe()
@@ -39,6 +44,8 @@ df.shape
 ```
 
 ### 3. 데이터 프레임 칼럼 확인, 이름 바꾸기
+<br>
+
 ```python
 df.columns
 df.columns = ['col', 'col', 'col']
@@ -46,18 +53,21 @@ df.rename(columns={'Before':'After'})
 ```
 
 ### 3. 데이터 프레임 특정 칼럼(열) 1개 선택
+<br>
 
 ```python
 y= df['outcome']
 ```
 
 ### 4. 데이터 프레임에서 칼럼(열) 여러개 선택
+<br>
 
 ```python
 num = df.loc[:, ['age', 'INR', 'glucose', 'MLS', 'SDH']]
 ```
 
 ### 5. 칼럼들 결합하기
+<br>
 
 ``` python
 X = pd.concat([num, cat], axis=1)
@@ -65,22 +75,33 @@ X = pd.concat([num, cat], axis=1)
 
 * `axis=0` 으로 설정하면 행 결합
 
-### 6. 칼럼 삭제
+<br>
+
+### 6. 칼럼 삭제 
+<br>
+
 ```python
 df_1 = df.drop(['INR'], axis = 1, inplace=True)
 ```
 * `inplace=True`로 지정하면 df 에서 완전 삭제
 * `inplace=False`로 지정하면 df_1 에서만 `'age'` 칼럼이 없고 df 에는 남아 있다.
 
+<br>
 
 ### 7. 칼럼 만들기
+<br>
+
 ```python
 df['instant'] = 1
 ```
 
 * `'instant'`라는 새로운 칼럼을 만들고 모든 행에 1이라는 값을 부여
 
+<br>
+
 ### 8. 칼럼 값 연산
+<br>
+
 ```python
 df.loc[df['age'] < 0, 'age'] = 0
 df.loc[df['basal_cistern'] == 1, 'basal_cistern'] = 0
@@ -89,32 +110,44 @@ df.loc[df['basal_cistern'] == 1, 'basal_cistern'] = 0
 * `'basal_cistern'` 의 값이 1일 때 `'basal_cistern'` 값을 0으로 바꾼다
 * .loc 을 붙히지 않으면 해당 행 전체를 0으로 만들어버린다.
 
+<br>
+
 ### 9. 칼럼 순서 바꾸기
+<br>
 
 ```python
 df = df.loc[:,['MLS', 'SDH', 'age', 'instant']]
 ```
 
 ### 10. 데이터 프레임을 Numpy 배열로 변환
+<br>
+
 ```python
 nd_df = df.values
 ```
+<br>
 
 ---
 
 # 2. Numpy
 
 ### 1. list 를 numpy로 변환
+<br>
+
 ```python
 beta = np.array[[1, 2, 3, 4]]
 ```
 
 ### 2. numpy 모양 변경
+<br>
+
 ```python
 beta = beta.reshape(4, 1)
 ```
 
 ### 3. 내적(행렬 곱)
+<br>
+
 ```python
 z = nd_df.dot(beta)
 ```
