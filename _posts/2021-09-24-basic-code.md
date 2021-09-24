@@ -63,7 +63,7 @@ num = df.loc[:, ['age', 'INR', 'glucose', 'MLS', 'SDH']]
 X = pd.concat([num, cat], axis=1)
 ```
 
-* axis=0으로 설정하면 행 결합
+* `axis=0` 으로 설정하면 행 결합
 
 ### 6. 칼럼 삭제
 ```python
