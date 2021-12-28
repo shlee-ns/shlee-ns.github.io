@@ -118,3 +118,13 @@ z = nd_df.dot(beta)
 ```
 * nd_df가 m x n 행령, beta 가 n x m' 행렬이면 내적한 z 는 m x m' 행렬이 된다.
 * nd_df의 열의 갯수와 beta의 행의 갯수가 같아야 한다.
+
+### 4. Arrane
+
+```python
+np.arange(2, 10, 3)
+```
+
+numpy 모듈의 arange 함수는 반열린구간 [start, stop) 에서 step 의 크기만큼 일정하게 떨어져 있는 숫자들을 array 형태로 반환해 주는 함수다.
+
+출처: https://codepractice.tistory.com/88 [코딩 연습]
