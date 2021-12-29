@@ -12,6 +12,7 @@ async function buttonBlink(btn, style) {
   btn.classList.remove(style);
   btn.classList.add("btn-light");
 }
+
 // End
 
 
@@ -45,6 +46,23 @@ for (var i = 0; i < codeChunk.length; i++) {
 }
 // End
 
+$("[data-clipboard-copy]").tooltip({
+    trigger: 'click',
+    placement: 'bottom'
+  });
+  
+  function setTooltip(btn, message) {
+    $(btn).tooltip('hide')
+      .attr('data-original-title', message)
+      .tooltip('show');
+  }
+  
+  function hideTooltip(btn) {
+    setTimeout(function() {
+      $(btn).tooltip('hide');
+    }, 1000);
+  }
+
 // Copy to clipboard
 var clipboard = new ClipboardJS("[data-clipboard-copy]", {
   target: function (trigger) {
@@ -52,10 +70,14 @@ var clipboard = new ClipboardJS("[data-clipboard-copy]", {
   }
 });
 
+
+
 // Messages and make the button blink
 clipboard.on("success", function (e) {
   e.clearSelection();
-  buttonBlink(e.trigger, "btn-light");
+  buttonBlink(e.trigger, "btn--primary");
+  setTooltip(e.trigger, 'Copied!');
+  hideTooltip(e.trigger);
   console.info("Action:", e.action);
   console.info("Text:", e.text);
   console.info("Trigger:", e.trigger);
