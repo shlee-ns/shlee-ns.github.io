@@ -2,9 +2,9 @@
 main:
   - title: "About"
     url: /about/
-  - title: "통계 개념"
-    url: /concept/
-  - title: "쉬운 R"
+  - title: "R"
     url: /r/
-  - title: "쉬운 머신러닝"
+  - title: "머신러닝"
     url: /ml/
+  - title: "기록"
+    url: /archive/
