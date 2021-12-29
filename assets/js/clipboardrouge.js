@@ -55,6 +55,7 @@ function sleep(ms) {
   // Messages and make the button blink
   clipboard.on("success", function (e) {
     e.clearSelection();
+    buttonBlink(e.trigger, "btn--success");
     console.info("Action:", e.action);
     console.info("Text:", e.text);
     console.info("Trigger:", e.trigger);
@@ -62,6 +63,7 @@ function sleep(ms) {
   
   clipboard.on("error", function (e) {
     e.clearSelection();
+    buttonBlink(e.trigger, "btn--danger");
     console.info("Action:", e.action);
     console.info("Trigger:", e.trigger);
   });
