@@ -102,10 +102,10 @@ analytics:
 # Site Author
 author:
   name             : "Sang Hyub LEE"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "Neurosurgeon"
   location         : "Korea"
-  email            : "sh.lee@gnu.ac.kr"
+  email            : "shlee.kns@gmail.com"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
