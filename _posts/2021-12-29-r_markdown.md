@@ -44,6 +44,7 @@ fig.height=7
 
 ### 3. 단축키
 
-chunk생성: command + opt + I
+chunk생성: command + opt + I  
+
 knit하기: command + shift + k 
 
