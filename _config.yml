@@ -20,7 +20,7 @@ title                    : "R과 의학 통계"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sang Hyub LEE"
-description              : "An amazing website."
+description              : "R과 의학통계, 머신러닝에 대한 블로그입니다."
 url                      : "https://shlee-ns.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
