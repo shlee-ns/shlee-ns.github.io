@@ -291,8 +291,6 @@ defaults:
       path: ""
       type: pages
     values:
-      toc: true
-      toc_sticky: true
       layout: single
       author_profile: true
       read_time: false

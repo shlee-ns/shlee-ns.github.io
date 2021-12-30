@@ -3,8 +3,10 @@ main:
   - title: "About"
     url: /about/
   - title: "R"
-    url: /r/
-  - title: "머신러닝"
-    url: /ml/
+    url: /categories/r/
+  - title: "Mahcine Learning"
+    url: /categories/ml/
+  - title: "Spine"
+    url: /categories/spine/
   - title: "기록"
-    url: /archive/
+    url: /categories/archive/

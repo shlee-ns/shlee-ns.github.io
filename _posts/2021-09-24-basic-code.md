@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - Blog
+  - ML
 tags:
   - Blog
 ---
