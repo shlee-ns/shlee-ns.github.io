@@ -2,8 +2,6 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
   - title: "R"
     url: /categories/r/
   - title: "Machine Learning"
