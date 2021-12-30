@@ -4,7 +4,7 @@ main:
     url: /about/
   - title: "R"
     url: /categories/r/
-  - title: "Mahcine Learning"
+  - title: "Machine Learning"
     url: /categories/ml/
   - title: "Spine"
     url: /categories/spine/
