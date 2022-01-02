@@ -6,8 +6,6 @@ toc_sticky: true
 
 categories:
   - R
-tags:
-  - Blog
 ---
 
 ### 1. 옵션을 문서 전체에 적용
