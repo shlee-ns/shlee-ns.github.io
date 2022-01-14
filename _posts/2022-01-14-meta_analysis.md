@@ -1,6 +1,6 @@
 ---
 title:  "metafor 패키지를 이용한 메타분석"
-excerpt: R의 metafor 패키지를 이용해 메타 분석을 실습했다.
+excerpt: R의 metafor 패키지를 이용해 메타분석을 실습했다.
 toc: true
 toc_sticky: true
 
