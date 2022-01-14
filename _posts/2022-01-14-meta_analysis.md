@@ -152,7 +152,7 @@ forest(res.FE, showweights=T, order="prec")
 
 
     
-![png](r/meta/output_10_0.png)
+![png](../r/meta/output_10_0.png)
     
 
 
@@ -174,7 +174,7 @@ funnel(res.FE)
 
 
     
-![png](r/meta/output_12_0.png)
+![png](../r/meta/output_12_0.png)
     
 
 
@@ -324,7 +324,7 @@ forest(res1.RE, showweights=T)
 
 
     
-![png](r/meta/output_24_0.png)
+![png](../r/meta/output_24_0.png)
     
 
 
@@ -337,29 +337,10 @@ funnel(res1.RE)
 
 
     
-![png](r/meta/output_26_0.png)
+![png](../r/meta/output_26_0.png)
     
 
 
-
-```R
-
-```
-
-
-```R
-
-```
-
-
-```R
-
-```
-
-
-```R
-
-```
 
 
 ```R
@@ -387,9 +368,3 @@ citation(package='metafor')
         url = {http://www.jstatsoft.org/v36/i03/},
       }
 
-
-
-
-```R
-
-```
